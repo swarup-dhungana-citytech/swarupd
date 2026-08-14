@@ -3,7 +3,7 @@ import { PillarExplorer } from "@/components/pillar-explorer";
 import { MarketRail } from "@/components/market-rail";
 import { profile } from "@/data/portfolio";
 
-const title = "Swarup Raj Dhungana — Payments & Fintech Product Manager";
+const title = "Swarup Raj Dhungana, Payments & Fintech Product Manager";
 const description =
   "Portfolio of Swarup Raj Dhungana: merchant acquiring, crypto and stablecoins, cross-border payroll, and AI/ML product delivery across South Asia, East Africa, LATAM and the EU.";
 
@@ -25,12 +25,12 @@ function Index() {
       <section className="border-b border-border py-24">
         <div className="mx-auto max-w-6xl px-6">
           <div className="animate-settle flex flex-col gap-4">
-            <span className="label-mono text-accent">Kathmandu / Global deployment</span>
+            <span className="label-mono text-accent">New York, USA / Global deployment</span>
             <h1 className="max-w-[24ch] text-4xl font-medium leading-tight tracking-tight text-balance md:text-5xl lg:text-6xl">
               {profile.role}
             </h1>
             <p className="max-w-[56ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl">
-              Specialising in the clean movement of value — payment orchestration, stablecoin
+              Specialising in the clean movement of value: payment orchestration, stablecoin
               settlement, and multi-currency payroll infrastructure across frontier and emerging
               markets.
             </p>

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { profile } from "@/data/portfolio";
 
-const title = "About — Swarup Raj Dhungana | Payments Product Leader";
+const title = "About Swarup Raj Dhungana | Payments Product Leader";
 const description =
   "Education, awards, publications and languages of Swarup Raj Dhungana, senior product manager for digital payments and fintech expansion.";
 
@@ -20,18 +20,18 @@ export const Route = createFileRoute("/about")({
 const education = [
   {
     school: "Asian Institute of Technology, Bangkok",
-    detail: "Master's, Information Management — GPA 3.83, His Majesty the King's Scholarship",
-    period: "2021 — 2023",
+    detail: "Master's, Information Management, GPA 3.83, His Majesty the King's Scholarship",
+    period: "2021 to 2023",
   },
   {
     school: "Leeds Beckett University, UK",
-    detail: "Master's, Information Technology — Distinction",
-    period: "2021 — 2022",
+    detail: "Master's, Information Technology, Distinction",
+    period: "2021 to 2022",
   },
   {
     school: "Leeds Beckett University, UK",
-    detail: "BSc Computer Science — First Class Honours",
-    period: "2016 — 2019",
+    detail: "BSc Computer Science, First Class Honours",
+    period: "2016 to 2019",
   },
 ];
 
@@ -120,7 +120,7 @@ function AboutPage() {
             <div>
               <h2 className="mb-4 text-2xl font-medium tracking-tight">Publications</h2>
               <p className="text-sm text-muted-foreground">
-                Ontology Framework for Privacy Protection in Learning and Education — under review,
+                Ontology Framework for Privacy Protection in Learning and Education, under review at
                 Applied Ontology Journal.
               </p>
             </div>

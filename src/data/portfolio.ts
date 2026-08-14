@@ -66,7 +66,7 @@ export const ledger: LedgerEntry[] = [
     id: "stablecoin-rails",
     pillars: ["crypto", "payroll"],
     org: "Niural AI",
-    period: "2026 — Present",
+    period: "2026 to Present",
     title: "Stablecoin payment rails for global payroll",
     summary:
       "Product strategy for stablecoin-based disbursement supporting distributed workforces, with active expansion across LATAM and the EU.",
@@ -90,7 +90,7 @@ export const ledger: LedgerEntry[] = [
     id: "regulatory-readiness",
     pillars: ["crypto"],
     org: "Niural AI",
-    period: "2026 — Present",
+    period: "2026 to Present",
     title: "Regulatory readiness for stablecoin disbursement",
     summary:
       "Evaluation of regulatory and compliance requirements across new markets to support safe, scalable rollout.",
@@ -112,7 +112,7 @@ export const ledger: LedgerEntry[] = [
     id: "getpay-finpos",
     pillars: ["acquiring"],
     org: "Citytech Global",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "Getpay & finPOS across five banks",
     summary:
       "End-to-end lifecycle ownership for a payment orchestration platform and a payment terminal solution.",
@@ -136,7 +136,7 @@ export const ledger: LedgerEntry[] = [
     id: "emv-kcb",
     pillars: ["acquiring"],
     org: "Citytech Global × KCB Bank",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "L3 EMV certification and PCI DSS",
     summary:
       "Hardware validation and approval for Instantpay terminals, plus a compliant operational framework for multi-country transactions.",
@@ -158,7 +158,7 @@ export const ledger: LedgerEntry[] = [
     id: "east-africa",
     pillars: ["acquiring", "payroll"],
     org: "Citytech Global × Instantpay",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "East Africa expansion via PSP partnership",
     summary:
       "Market entry through Instantpay (Tanzania), leveraging its PSP license for merchant acquisition and infrastructure rollout.",
@@ -180,7 +180,7 @@ export const ledger: LedgerEntry[] = [
     id: "gov-clients",
     pillars: ["acquiring"],
     org: "Citytech Global",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "Government payment and ticketing systems",
     summary:
       "Onboarded the Standard Gauge Railway Payment System (Kenya) and the Zanmalipo Ticketing Platform under the Zanzibar Tourism Board.",
@@ -202,7 +202,7 @@ export const ledger: LedgerEntry[] = [
     id: "ukaid-grant",
     pillars: ["acquiring"],
     org: "UK Aid (FCDO)",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "USD 400K grant for finPOS Ultra",
     summary:
       "Secured donor funding for a mobile POS initiative advancing financial inclusion in Nepal.",
@@ -224,7 +224,7 @@ export const ledger: LedgerEntry[] = [
     id: "merchant-analytics",
     pillars: ["acquiring", "aiml"],
     org: "Citytech Global",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "Merchant analytics and transaction monitoring",
     summary:
       "KPI dashboards for merchant analytics and transaction monitoring, plus workflow automation across operations.",
@@ -245,7 +245,7 @@ export const ledger: LedgerEntry[] = [
     id: "cloudfactory-delivery",
     pillars: ["aiml"],
     org: "CloudFactory",
-    period: "2023 — 2024",
+    period: "2023 to 2024",
     title: "Enterprise AI/ML delivery across three continents",
     summary:
       "AI/ML delivery for enterprise clients in Europe and the United States, with distributed teams in Nepal, Kenya, and Germany.",
@@ -304,7 +304,7 @@ export const markets = [
 export const profile = {
   name: "Swarup Raj Dhungana",
   role: "Senior Product Manager, Digital Payments and Fintech Expansion",
-  location: "Kathmandu, Nepal",
+  location: "New York, USA",
   email: "swarupdhungana@gmail.com",
   linkedin: "https://linkedin.com/in/swarup2",
   linkedinLabel: "linkedin.com/in/swarup2",
