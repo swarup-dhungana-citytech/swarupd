@@ -1,6 +1,8 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PillarExplorer } from "@/components/pillar-explorer";
 import { MarketRail } from "@/components/market-rail";
+import { ExecutiveBrief } from "@/components/executive-brief";
+import { DecisionLog } from "@/components/decision-log";
 import { profile } from "@/data/portfolio";
 
 const title = "Swarup Raj Dhungana, Payments & Fintech Product Manager";
@@ -50,8 +52,10 @@ function Index() {
         </div>
       </section>
 
+      <ExecutiveBrief />
       <PillarExplorer />
       <MarketRail />
+      <DecisionLog />
     </main>
   );
 }
