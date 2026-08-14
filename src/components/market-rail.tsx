@@ -41,10 +41,13 @@ export function MarketRail() {
           ))}
         </div>
 
-        <div className="mt-8 border-t border-border pt-8">
-          <span className="label-mono text-muted-foreground">{current.name}</span>
-          <p className="mt-2 max-w-[52ch] text-xl font-medium tracking-tight">{current.note}</p>
-        </div>
+        {current && (
+          <div className="mt-8 border-t border-border pt-8">
+            <span className="label-mono text-muted-foreground">{current.name}</span>
+            <p className="mt-2 max-w-[52ch] text-xl font-medium tracking-tight">{current.note}</p>
+          </div>
+        )}
+
       </div>
     </section>
   );
