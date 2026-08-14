@@ -1,24 +1,57 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { PillarExplorer } from "@/components/pillar-explorer";
+import { MarketRail } from "@/components/market-rail";
+import { profile } from "@/data/portfolio";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
+const title = "Swarup Raj Dhungana — Payments & Fintech Product Manager";
+const description =
+  "Portfolio of Swarup Raj Dhungana: merchant acquiring, crypto and stablecoins, cross-border payroll, and AI/ML product delivery across South Asia, East Africa, LATAM and the EU.";
+
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title },
+      { name: "description", content: description },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <main>
+      <section className="border-b border-border py-24">
+        <div className="mx-auto max-w-6xl px-6">
+          <div className="animate-settle flex flex-col gap-4">
+            <span className="label-mono text-accent">Kathmandu / Global deployment</span>
+            <h1 className="max-w-[24ch] text-4xl font-medium leading-tight tracking-tight text-balance md:text-5xl lg:text-6xl">
+              {profile.role}
+            </h1>
+            <p className="max-w-[56ch] text-lg leading-relaxed text-muted-foreground text-pretty md:text-xl">
+              Specialising in the clean movement of value — payment orchestration, stablecoin
+              settlement, and multi-currency payroll infrastructure across frontier and emerging
+              markets.
+            </p>
+            <div className="mt-4 flex items-center gap-6">
+              <Link
+                to="/"
+                hash="pillars"
+                className="rounded-sm bg-primary px-4 py-2.5 text-sm font-medium text-primary-foreground transition-opacity hover:opacity-90"
+              >
+                Explore the four pillars
+              </Link>
+              <span className="font-mono text-xs text-muted-foreground">
+                Select a pillar to filter the ledger
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <PillarExplorer />
+      <MarketRail />
+    </main>
   );
 }
