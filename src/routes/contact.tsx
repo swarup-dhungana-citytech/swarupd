@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { profile } from "@/data/portfolio";
 
-const title = "Contact — Swarup Raj Dhungana | Payments Product Manager";
+const title = "Contact Swarup Raj Dhungana | Payments Product Manager";
 const description =
   "Get in touch with Swarup Raj Dhungana about payments, stablecoin settlement, cross-border payroll and product roles.";
 

@@ -43,7 +43,7 @@ export function PillarExplorer() {
           <div className="mb-12 flex items-end justify-between border-b border-border pb-4">
             <h2 className="text-2xl font-medium tracking-tight">Core domain pillars</h2>
             <span className="label-mono text-muted-foreground">
-              {filter === "all" ? "04 sectors — select to filter" : "1 selected"}
+              {filter === "all" ? "04 sectors, select to filter" : "1 selected"}
             </span>
           </div>
 
@@ -161,7 +161,7 @@ export function PillarExplorer() {
                         <span className="label-mono text-muted-foreground">{entry.metricLabel}</span>
                       </div>
                       <span className="font-mono text-[10px] uppercase tracking-widest text-muted-foreground md:mt-4">
-                        {expanded ? "— Collapse" : "+ Expand"}
+                        {expanded ? "Collapse" : "+ Expand"}
                       </span>
                     </div>
                   </button>

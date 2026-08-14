@@ -66,7 +66,7 @@ export const ledger: LedgerEntry[] = [
     id: "stablecoin-rails",
     pillars: ["crypto", "payroll"],
     org: "Niural AI",
-    period: "2026 — Present",
+    period: "2026 to Present",
     title: "Stablecoin payment rails for global payroll",
     summary:
       "Product strategy for stablecoin-based disbursement supporting distributed workforces, with active expansion across LATAM and the EU.",
@@ -90,7 +90,7 @@ export const ledger: LedgerEntry[] = [
     id: "regulatory-readiness",
     pillars: ["crypto"],
     org: "Niural AI",
-    period: "2026 — Present",
+    period: "2026 to Present",
     title: "Regulatory readiness for stablecoin disbursement",
     summary:
       "Evaluation of regulatory and compliance requirements across new markets to support safe, scalable rollout.",
@@ -112,7 +112,7 @@ export const ledger: LedgerEntry[] = [
     id: "getpay-finpos",
     pillars: ["acquiring"],
     org: "Citytech Global",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "Getpay & finPOS across five banks",
     summary:
       "End-to-end lifecycle ownership for a payment orchestration platform and a payment terminal solution.",
@@ -136,7 +136,7 @@ export const ledger: LedgerEntry[] = [
     id: "emv-kcb",
     pillars: ["acquiring"],
     org: "Citytech Global × KCB Bank",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "L3 EMV certification and PCI DSS",
     summary:
       "Hardware validation and approval for Instantpay terminals, plus a compliant operational framework for multi-country transactions.",
@@ -158,7 +158,7 @@ export const ledger: LedgerEntry[] = [
     id: "east-africa",
     pillars: ["acquiring", "payroll"],
     org: "Citytech Global × Instantpay",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "East Africa expansion via PSP partnership",
     summary:
       "Market entry through Instantpay (Tanzania), leveraging its PSP license for merchant acquisition and infrastructure rollout.",
@@ -180,7 +180,7 @@ export const ledger: LedgerEntry[] = [
     id: "gov-clients",
     pillars: ["acquiring"],
     org: "Citytech Global",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "Government payment and ticketing systems",
     summary:
       "Onboarded the Standard Gauge Railway Payment System (Kenya) and the Zanmalipo Ticketing Platform under the Zanzibar Tourism Board.",
@@ -202,7 +202,7 @@ export const ledger: LedgerEntry[] = [
     id: "ukaid-grant",
     pillars: ["acquiring"],
     org: "UK Aid (FCDO)",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "USD 400K grant for finPOS Ultra",
     summary:
       "Secured donor funding for a mobile POS initiative advancing financial inclusion in Nepal.",
@@ -224,7 +224,7 @@ export const ledger: LedgerEntry[] = [
     id: "merchant-analytics",
     pillars: ["acquiring", "aiml"],
     org: "Citytech Global",
-    period: "2024 — 2026",
+    period: "2024 to 2026",
     title: "Merchant analytics and transaction monitoring",
     summary:
       "KPI dashboards for merchant analytics and transaction monitoring, plus workflow automation across operations.",
@@ -245,7 +245,7 @@ export const ledger: LedgerEntry[] = [
     id: "cloudfactory-delivery",
     pillars: ["aiml"],
     org: "CloudFactory",
-    period: "2023 — 2024",
+    period: "2023 to 2024",
     title: "Enterprise AI/ML delivery across three continents",
     summary:
       "AI/ML delivery for enterprise clients in Europe and the United States, with distributed teams in Nepal, Kenya, and Germany.",
@@ -304,10 +304,96 @@ export const markets = [
 export const profile = {
   name: "Swarup Raj Dhungana",
   role: "Senior Product Manager, Digital Payments and Fintech Expansion",
-  location: "Kathmandu, Nepal",
+  location: "New York, USA",
   email: "swarupdhungana@gmail.com",
   linkedin: "https://linkedin.com/in/swarup2",
   linkedinLabel: "linkedin.com/in/swarup2",
   summary:
     "Product leader with 6+ years building and scaling payments and fintech infrastructure across South Asia, East Africa, LATAM, and the EU. Currently leading global payroll payment rails and stablecoin integration at Niural AI.",
 };
+
+export const scaleSignals = [
+  { value: "6+", label: "Years in payments and fintech product" },
+  { value: "5", label: "Bank acquirers live on platform" },
+  { value: "8", label: "Markets shipped into across 4 regions" },
+  { value: "2", label: "National government payment programmes" },
+  { value: "USD 400K", label: "Donor funding secured and delivered" },
+  { value: "40+", label: "Engineers, compliance and ops partners led" },
+];
+
+export interface Principle {
+  title: string;
+  body: string;
+}
+
+export const principles: Principle[] = [
+  {
+    title: "Compliance is a design input, not a gate at the end",
+    body: "L3 EMV, PCI DSS and licensing timelines get sequenced into the roadmap on day one. Certification lead times drive release dates, not the other way round.",
+  },
+  {
+    title: "Ship through partners when licensing is the bottleneck",
+    body: "In East Africa a direct licence path was measured in years, so market entry ran on a partner PSP licence. Route to market beats purity of ownership.",
+  },
+  {
+    title: "Reconciliation quality is the real product metric",
+    body: "Authorisation rate and TPS are visible; break rates and manual touchpoints are what operations teams live with. I instrument those first.",
+  },
+  {
+    title: "Write the operating model, not just the spec",
+    body: "Maker-checker, SLA reporting and ISO 9001 documentation are what keep a platform running once the launch team moves on.",
+  },
+];
+
+export interface DecisionEntry {
+  id: string;
+  question: string;
+  call: string;
+  tradeoff: string;
+  learned: string;
+}
+
+export const decisions: DecisionEntry[] = [
+  {
+    id: "psp-partner",
+    question: "Own the licence or partner into East Africa?",
+    call: "Entered Tanzania and Kenya on Instantpay's PSP licence rather than pursuing direct authorisation.",
+    tradeoff:
+      "Gave up margin and some control of the merchant relationship in exchange for roughly two years of time to market and a lower regulatory capital ask.",
+    learned:
+      "Partner economics must be renegotiated before volume scales, not after. I now build the step-down pricing schedule into the first agreement.",
+  },
+  {
+    id: "stablecoin-sequencing",
+    question: "Which markets get stablecoin payout first?",
+    call: "Sequenced LATAM and EU corridors by regulatory readiness and banking partner appetite rather than by demand volume.",
+    tradeoff:
+      "Slower revenue ramp in the loudest corridors, but no rework and no frozen funds when supervisory expectations shifted.",
+    learned:
+      "Treasury and compliance need to sit in the same prioritisation review as sales. Demand-led sequencing on crypto rails is how teams end up unwinding launches.",
+  },
+  {
+    id: "terminal-cost",
+    question: "Certify a full terminal or build a lower-cost mobile device?",
+    call: "Backed finPOS Ultra for micro-merchants and funded it through a UK Aid grant instead of core P&L.",
+    tradeoff:
+      "Added donor reporting overhead and a narrower feature set, but opened a merchant segment that conventional terminal economics could not serve.",
+    learned:
+      "Grant funding buys a real option on a segment. The discipline it imposes on impact measurement is worth more than the cash.",
+  },
+];
+
+export const workingStyle = [
+  {
+    label: "Stakeholders I work with",
+    body: "Bank sponsors and acquirer risk teams, scheme and certification bodies, treasury, compliance and legal, distributed engineering, field operations and merchant support.",
+  },
+  {
+    label: "How I run a roadmap",
+    body: "Quarterly outcome themes tied to settlement, acceptance and payout metrics. Weekly delivery review with engineering and compliance in the same room. Certification and audit milestones tracked as first-class roadmap items.",
+  },
+  {
+    label: "What I look for next",
+    body: "Payments or payroll infrastructure where regulatory complexity is the moat, the corridor mix is genuinely cross-border, and the product team owns unit economics rather than feature output.",
+  },
+];
