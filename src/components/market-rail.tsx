@@ -3,8 +3,9 @@ import { markets } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 
 export function MarketRail() {
-  const [active, setActive] = useState(markets[0].name);
-  const current = markets.find((m) => m.name === active) ?? markets[0];
+  const [active, setActive] = useState<string>(markets[0]?.name ?? "");
+  const current = markets.find((m) => m.name === active);
+
 
   return (
     <section className="border-t border-border bg-surface py-24">
