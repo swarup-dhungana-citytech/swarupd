@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PillarExplorer } from "@/components/pillar-explorer";
 import { MarketRail } from "@/components/market-rail";
 import { ExecutiveBrief } from "@/components/executive-brief";
+import { HowIWork } from "@/components/how-i-work";
 import { DecisionLog } from "@/components/decision-log";
 import { profile } from "@/data/portfolio";
 
@@ -53,6 +54,7 @@ function Index() {
       </section>
 
       <ExecutiveBrief />
+      <HowIWork />
       <PillarExplorer />
       <MarketRail />
       <DecisionLog />

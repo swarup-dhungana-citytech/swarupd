@@ -78,6 +78,7 @@ export const ledger: LedgerEntry[] = [
       action: [
         "Led product strategy for stablecoin-based payment rails supporting global payroll disbursement.",
         "Drove integration of Coinbase for stablecoin settlement and Latitude for cross-border payment rail processing.",
+        "Set up statutory payment handling for the EU and lined up payment rails through partnerships with multiple providers.",
         "Owned the roadmap for multi-currency payroll infrastructure with engineering, compliance, and regional teams.",
       ],
       outcome:
@@ -113,23 +114,24 @@ export const ledger: LedgerEntry[] = [
     pillars: ["acquiring"],
     org: "Citytech Global",
     period: "2024 to 2026",
-    title: "Getpay & finPOS across five banks",
+    title: "Getpay, built zero to one as founding PM",
     summary:
-      "End-to-end lifecycle ownership for a payment orchestration platform and a payment terminal solution.",
+      "Founding product manager for Getpay, a payment orchestration platform built and shipped from scratch, plus market expansion for finPOS, Citytech's existing terminal product.",
     metric: "30%",
     metricLabel: "Fewer reconciliation issues",
     detail: {
       context:
-        "Banks running fragmented acceptance stacks carried heavy manual reconciliation overhead.",
+        "Citytech had finPOS, a payment terminal product, but no orchestration layer connecting it to banks. Fragmented acceptance stacks carried heavy manual reconciliation overhead.",
       action: [
-        "Owned the end-to-end lifecycle for Getpay (payment orchestration) and finPOS (payment terminals).",
+        "Built and shipped Getpay from zero to one as founding product manager, the orchestration layer connecting merchants, banks, and terminals.",
+        "Led market expansion for finPOS, Citytech's existing terminal product.",
         "Oversaw Agency Banking suite integration into core-banking systems.",
         "Introduced maker-checker approval and workflow automation.",
       ],
       outcome:
         "Rolled out across 5 banks, reducing reconciliation issues by 30% and manual errors by 45%.",
     },
-    tags: ["Payment Orchestration", "POS Switch", "Core Banking", "Maker-Checker"],
+    tags: ["Founding PM", "Payment Orchestration", "POS Switch", "Core Banking", "Maker-Checker"],
     markets: ["Nepal"],
   },
   {
@@ -161,7 +163,7 @@ export const ledger: LedgerEntry[] = [
     period: "2024 to 2026",
     title: "East Africa expansion via PSP partnership",
     summary:
-      "Market entry through Instantpay (Tanzania), leveraging its PSP license for merchant acquisition and infrastructure rollout.",
+      "Market entry through Instantpay (Tanzania), leveraging its PSP license for merchant acquisition, POS expansion, and PCI DSS-certified infrastructure rollout.",
     metric: "PSP license",
     metricLabel: "Route to market",
     detail: {
@@ -169,11 +171,12 @@ export const ledger: LedgerEntry[] = [
         "Entering East Africa directly would have required a licensing path measured in years.",
       action: [
         "Spearheaded Citytech's expansion into East Africa through a partnership with Instantpay (Tanzania).",
-        "Leveraged the partner PSP license to drive merchant acquisition and payment infrastructure rollout.",
+        "Leveraged the partner PSP license to drive merchant acquisition and expand POS terminal deployment.",
+        "Completed PCI DSS certification establishing a compliant operational framework for multi-country transactions.",
       ],
-      outcome: "A licensed route to market and live payment infrastructure in East Africa.",
+      outcome: "A licensed route to market and live, PCI DSS-certified payment infrastructure in East Africa.",
     },
-    tags: ["PSP Licensing", "Merchant Acquisition", "Market Entry"],
+    tags: ["PSP Licensing", "Merchant Acquisition", "Market Entry", "POS Switch", "PCI DSS"],
     markets: ["Tanzania", "Kenya"],
   },
   {
@@ -212,8 +215,8 @@ export const ledger: LedgerEntry[] = [
       context:
         "Reaching micro-merchants in Nepal required a lower-cost mobile acceptance device than conventional terminals.",
       action: [
-        "Built and defended the case for finPOS Ultra as a financial inclusion initiative.",
-        "Secured a USD 400K grant from UK Aid (FCDO).",
+        "Conceived finPOS Ultra, a cost-efficient, powerful device built for financial inclusion in the Nepali market, plus the technology to support it.",
+        "Secured a USD 400K grant from UK Aid (FCDO) to fund the initiative.",
       ],
       outcome: "Funded mobile POS programme advancing financial inclusion in Nepal.",
     },
@@ -288,17 +291,66 @@ export const ledger: LedgerEntry[] = [
     tags: ["Applied Ontology", "GDPR", "SWRL", "Research"],
     markets: ["Japan"],
   },
+  {
+    id: "lodz-research",
+    pillars: ["aiml"],
+    org: "Lodz University of Technology",
+    period: "2018",
+    title: "Applied ML research in image processing",
+    summary:
+      "Research internship applying TensorFlow to image-processing and machine learning models at the AI Research Department.",
+    metric: "CNN / Mask R-CNN",
+    metricLabel: "Models applied",
+    detail: {
+      context:
+        "An early-career research chapter, before the move into product, applying computer vision techniques to real image-processing problems.",
+      action: [
+        "Applied TensorFlow and Java to image-processing and machine learning models.",
+        "Worked with CNN and Mask R-CNN architectures at the AI Research Department.",
+      ],
+      outcome:
+        "Foundational applied-ML experience that still shapes a technical, first-principles approach to product decisions.",
+    },
+    tags: ["TensorFlow", "CNN", "Mask R-CNN", "Research"],
+    markets: ["Poland"],
+  },
+  {
+    id: "ait-research",
+    pillars: ["aiml"],
+    org: "Asian Institute of Technology",
+    period: "2021 to 2023",
+    title: "Master's, research, and teaching at AIT",
+    summary:
+      "Master's in Information Management, plus research and teaching roles applying data modeling to a live university platform.",
+    metric: "3.83",
+    metricLabel: "Masters GPA, King's Scholarship",
+    detail: {
+      context:
+        "Formalising the shift from engineering into product and information-systems thinking, on His Majesty the King's Scholarship.",
+      action: [
+        "Completed a Master's in Information Management, GPA 3.83, on His Majesty the King's Scholarship.",
+        "Redesigned the database schema for AIT's Technology-Enabled Active Learning (TEAL) platform as Research Assistant.",
+        "Taught Data Modeling & Management to 50+ students as Teaching Assistant.",
+      ],
+      outcome:
+        "A master's degree plus two applied research and teaching roles that shaped a systems-first approach to product work.",
+    },
+    tags: ["Research", "Data Modeling", "Teaching"],
+    markets: ["Thailand"],
+  },
 ];
 
 export const markets = [
   { name: "Nepal", note: "Getpay, finPOS, finPOS Ultra" },
   { name: "Kenya", note: "L3 EMV with KCB Bank, SGR payment system" },
-  { name: "Tanzania", note: "Instantpay PSP partnership" },
+  { name: "Tanzania", note: "Instantpay PSP partnership, POS expansion, PCI DSS certified" },
   { name: "Zanzibar", note: "Zanmalipo ticketing platform" },
   { name: "LATAM", note: "Stablecoin payroll expansion" },
-  { name: "EU", note: "Payout coverage and compliance" },
+  { name: "EU", note: "Statutory payments and payment rails, partnered with multiple providers" },
   { name: "Germany", note: "Distributed AI/ML delivery" },
   { name: "Japan", note: "ISO 29187 compliance research" },
+  { name: "Poland", note: "Applied ML research, Lodz University" },
+  { name: "Thailand", note: "Master's, research & teaching at AIT" },
 ];
 
 export const profile = {
@@ -309,13 +361,13 @@ export const profile = {
   linkedin: "https://linkedin.com/in/swarup2",
   linkedinLabel: "linkedin.com/in/swarup2",
   summary:
-    "Product leader with 6+ years building and scaling payments and fintech infrastructure across South Asia, East Africa, LATAM, and the EU. Currently leading global payroll payment rails and stablecoin integration at Niural AI.",
+    "Product leader with 6+ years working across the intersection of technology, product, and people, scaling systems across South Asia, East Africa, LATAM, and the EU. Currently leading global payroll payment rails and stablecoin integration at Niural AI.",
 };
 
 export const scaleSignals = [
   { value: "6+", label: "Years in payments and fintech product" },
   { value: "5", label: "Bank acquirers live on platform" },
-  { value: "8", label: "Markets shipped into across 4 regions" },
+  { value: "10", label: "Markets shipped into across four continents" },
   { value: "2", label: "National government payment programmes" },
   { value: "USD 400K", label: "Donor funding secured and delivered" },
   { value: "40+", label: "Engineers, compliance and ops partners led" },
@@ -397,3 +449,20 @@ export const workingStyle = [
     body: "Payments or payroll infrastructure where regulatory complexity is the moat, the corridor mix is genuinely cross-border, and the product team owns unit economics rather than feature output.",
   },
 ];
+
+export const howIWork = {
+  intro:
+    "Product decisions here start from first principles, not from what a competitor shipped last quarter. The standard craft is standard: roadmap ownership, agile delivery, stakeholder alignment, data-driven prioritization. What's less standard is how AI shows up inside that craft, as a working part of the job, not a buzzword.",
+  practices: [
+    {
+      label: "AI Prototyping",
+      body: "Turning an idea into something clickable before it reaches engineering or design.",
+    },
+    {
+      label: "AI Coding Agent",
+      body: "Ships working prototypes by directing an AI coding agent through conversation, not hand-coded line by line.",
+    },
+  ],
+  docudaiIntro:
+    "Docudai is an AI agent I built and trained to draft PRDs conversationally, and to review one you upload. What's below is a scripted walkthrough of the real tool, not a live model call.",
+};
